@@ -1,0 +1,3 @@
+# splatoon
+
+init
