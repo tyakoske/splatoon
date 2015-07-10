@@ -1,17 +1,19 @@
+
 require 'time'
 require 'yaml'
 #{battle_type:{stage:time}}
 
 e_e = "Windows31J"
 
+p "========================"
 #val = ARGF.each_line.each_slice(4).take(4)
-
-File.open("splatoon_text","w:UTF-8:Windows-31J").each.each_slice(4).each do |dates,battle_type,stages,other|
+ARGF.each_line.each_slice(4).each do |dates,battle_type,stages,other|
   p battle_type.encoding
-  p "#{dates} #{battle_type.encode e_e} #{stages.encode e_e}"
+  #p "#{dates} #{battle_type.encode e_e} #{stages.encode e_e}"
+  p "#{dates} #{battle_type} #{stages}"
 end
 
-print val
+#print val
 print "-------------------"
 
 hash = {}
