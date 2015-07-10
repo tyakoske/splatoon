@@ -4,9 +4,11 @@ require 'time'
 
 hash = {}
 
-lines = "foo"
+#lines = "foo"
 
-lines.each do |line|
+
+
+ARGF.each do |line|
   battle_type = "nawabari"
   stage = "mozuku"
   time_from = Time.parse "2013-10-01 23:00"
